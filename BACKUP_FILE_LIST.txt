@@ -1,0 +1,39 @@
+Backup of key files before restructuring:
+
+Root:
+- tailwind.config.js
+- tailwind.config.js.bak
+- postcss.config.cjs
+- vite.config.ts
+- tsconfig.json
+- tsconfig.app.json
+- tsconfig.node.json
+- package.json
+- package-lock.json
+- index.html
+- README.md
+- DEPLOYMENT.md
+
+src:
+- App.tsx
+- App.css
+- index.css
+- index.css.bak
+- main.tsx
+- vite-env.d.ts
+
+src/components:
+- About.tsx
+- About.tsx.bak
+- Contact.tsx
+- Contact.tsx.bak
+- Hero.tsx
+- Logo.tsx
+- Navigation.tsx
+- Navigation.tsx.bak
+- Portfolio.tsx
+- Portfolio.tsx.bak
+- Resume.tsx
+- Resume.tsx.bak
+- SocialBar.tsx
+- SocialLinks.tsx

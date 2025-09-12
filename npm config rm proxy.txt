@@ -1,0 +1,5 @@
+npm config rm proxy
+npm config rm https-proxy
+npm config set registry https://registry.npmjs.org/
+npm cache clean --force
+npm install

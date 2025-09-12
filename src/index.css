@@ -1,0 +1,35 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+	background: #f1f5f9;
+}
+
+body {
+	font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+	color: #1e293b;
+	background: #f1f5f9;
+	min-height: 100vh;
+	font-size: 1.1rem;
+}
+
+a.button, .btn, button {
+	font-size: 1.05rem;
+	font-weight: 600;
+	letter-spacing: 0.01em;
+}
+
+a {
+	color: #38bdf8;
+	transition: color 0.2s;
+}
+a:hover {
+	color: #f59e42;
+}
+
+.card {
+	@apply bg-white shadow-card rounded-xl p-6 transition-transform duration-200 hover:scale-105;
+}
