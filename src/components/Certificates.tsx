@@ -39,7 +39,7 @@ export default function Certificates() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`View certificate: ${cert.title}`}
-                className="inline-flex items-center gap-2 bg-accent text-primary-900 px-8 py-3 rounded-lg font-bold text-lg hover:bg-primary-100 hover:text-accent transition-all duration-300 shadow-xl font-mono border-2 border-accent"
+                className="inline-flex items-center gap-2 bg-accent text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-primary-100 hover:text-accent transition-all duration-300 shadow-xl font-mono border-2 border-accent"
               >
                 <ExternalLink size={20} />
                 <span>View Certificate</span>

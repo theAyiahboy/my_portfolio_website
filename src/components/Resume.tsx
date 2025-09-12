@@ -140,7 +140,7 @@ export default function Resume() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download Resume PDF"
-              className="inline-block bg-accent text-primary-900 px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary-100 hover:text-accent transition-all duration-300 transform hover:-translate-y-1 shadow-xl font-mono border-2 border-accent"
+              className="inline-block bg-accent text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary-100 hover:text-accent transition-all duration-300 transform hover:-translate-y-1 shadow-xl font-mono border-2 border-accent"
             >
               <span>Download Resume (PDF)</span>
             </a>

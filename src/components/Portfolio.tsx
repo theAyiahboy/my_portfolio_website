@@ -101,7 +101,7 @@ const Portfolio = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-3 mt-auto">
-                  <button aria-label={`View case study for ${project.title}`} className="flex-1 bg-accent text-primary-900 py-3 px-5 rounded-lg hover:bg-primary-100 hover:text-accent transition-colors duration-300 flex items-center justify-center gap-2 text-base font-bold border-2 border-accent font-mono shadow-lg">
+                  <button aria-label={`View case study for ${project.title}`} className="flex-1 bg-accent text-white py-3 px-5 rounded-lg hover:bg-primary-100 hover:text-accent transition-colors duration-300 flex items-center justify-center gap-2 text-base font-bold border-2 border-accent font-mono shadow-lg">
                     <FileText size={18} />
                     <span>View Case Study</span>
                   </button>
@@ -111,14 +111,14 @@ const Portfolio = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Learn more about ${project.title}`}
-                      className="flex-1 border-2 border-accent text-accent py-3 px-5 rounded-lg hover:bg-accent hover:text-primary-900 transition-all duration-300 flex items-center justify-center gap-2 text-base font-bold font-mono shadow-lg bg-primary-100/10"
+                      className="flex-1 border-2 border-accent text-accent py-3 px-5 rounded-lg hover:bg-accent hover:text-white transition-all duration-300 flex items-center justify-center gap-2 text-base font-bold font-mono shadow-lg bg-primary-100/10"
                     >
                       <ExternalLink size={18} />
                       <span>Learn More</span>
                     </a>
                   ) : (
                     <button
-                      className="flex-1 border-2 border-accent text-accent py-3 px-5 rounded-lg bg-primary-900/40 hover:bg-accent/20 hover:text-primary-900 transition-all duration-300 flex items-center justify-center gap-2 text-base font-bold font-mono shadow-lg"
+                      className="flex-1 border-2 border-accent text-accent py-3 px-5 rounded-lg bg-primary-900/40 hover:bg-accent/20 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 text-base font-bold font-mono shadow-lg"
                       aria-label="Learn More (disabled)"
                       disabled
                     >
@@ -140,7 +140,7 @@ const Portfolio = () => {
           <a
             href="#contact"
             aria-label="Get in touch via contact form"
-            className="inline-block bg-accent text-primary-900 px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary-100 hover:text-accent transition-all duration-300 transform hover:-translate-y-1 shadow-xl font-mono border-2 border-accent"
+            className="inline-block bg-accent text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary-100 hover:text-accent transition-all duration-300 transform hover:-translate-y-1 shadow-xl font-mono border-2 border-accent"
           >
             <span>Get in Touch</span>
           </a>
