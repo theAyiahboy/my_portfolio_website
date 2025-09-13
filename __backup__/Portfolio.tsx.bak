@@ -1,1 +1,10 @@
 // Backup of Portfolio.tsx
+export default defineConfig({
+  base: '/<repo-name>/',
+  // ...other config
+})
+
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}

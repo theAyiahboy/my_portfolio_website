@@ -7,11 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#1e293b', // deep navy
-        secondary: '#f1f5f9', // soft gray
-        accent: '#ef4444', // red-500
-        highlight: '#f59e42', // orange
-        emerald: '#10b981', // emerald
+        primary: '#1e293b', // navy
+        secondary: '#f8fafc', // light gray
+        accent: '#2563eb', // blue
+        highlight: '#64748b', // slate
+        muted: '#e2e8f0', // muted gray
+        info: '#38bdf8', // sky blue
+        success: '#10b981', // emerald
+        warning: '#fbbf24', // amber
+        error: '#ef4444', // red (only for errors)
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui'],

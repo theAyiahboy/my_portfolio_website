@@ -32,7 +32,7 @@ export default function SocialBar() {
           href={s.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="group bg-primary-700 shadow-lg rounded-full p-2 hover:bg-accent hover:text-white transition-colors border border-primary-600"
+          className="group bg-blue-600 shadow-lg rounded-full p-2 hover:bg-blue-700 hover:text-white transition-colors border border-blue-700"
           aria-label={s.label}
         >
           {s.icon}

@@ -22,13 +22,13 @@ export default function Navigation() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled
-        ? 'bg-gradient-to-r from-primary-950 via-primary-900 to-primary-950 shadow-2xl border-b-2 border-accent/80 backdrop-blur-lg'
-        : 'bg-gradient-to-r from-primary-900 via-primary-950 to-primary-900 border-b border-accent/40'
+  ? 'bg-gradient-to-r from-primary-950 via-primary-900 to-primary-950 shadow-2xl border-b-2 border-blue-600/80 backdrop-blur-lg'
+  : 'bg-gradient-to-r from-primary-900 via-primary-950 to-primary-900 border-b border-blue-600/40'
     }`}>
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2 h-16">
         {/* Logo and Name with code style */}
         <a href="#home" className="flex items-center group">
-          <span className="text-xl md:text-2xl font-bold text-accent tracking-widest select-none whitespace-nowrap group-hover:text-primary-400 transition-colors font-mono">
+          <span className="text-xl md:text-2xl font-bold text-blue-600 tracking-widest select-none whitespace-nowrap group-hover:text-blue-700 transition-colors font-mono">
             &lt;Giovanni /&gt;
           </span>
         </a>
@@ -39,7 +39,7 @@ export default function Navigation() {
             <li key={item.name}>
               <a
                 href={item.href}
-                className="text-primary-100 font-mono px-3 py-2 rounded hover:text-accent hover:bg-primary-800/40 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                className="text-blue-600 font-mono px-3 py-2 rounded hover:text-blue-700 hover:bg-primary-800/40 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-700"
               >
                 {item.name}
               </a>
@@ -64,7 +64,7 @@ export default function Navigation() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block py-2 px-4 text-primary-100 font-mono rounded hover:text-accent hover:bg-primary-800/40 transition-colors duration-200"
+                  className="block py-2 px-4 text-blue-600 font-mono rounded hover:text-blue-700 hover:bg-primary-800/40 transition-colors duration-200"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}

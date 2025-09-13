@@ -72,7 +72,7 @@ const Contact = () => {
   <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-accent mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
               Get In Touch
             </h2>
             <p className="text-xl text-secondary-50 max-w-3xl mx-auto">
@@ -83,21 +83,21 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h3 className="text-2xl font-bold text-accent mb-8">Contact Information</h3>
+              <h3 className="text-2xl font-bold text-blue-600 mb-8">Contact Information</h3>
               
               {/* Contact Details */}
               <div className="space-y-6 mb-12">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-center gap-4">
                     <div className="p-3 bg-primary-700 rounded-lg">
-                      <info.icon className="text-accent" size={24} />
+                      <info.icon className="text-blue-600" size={24} />
                     </div>
                     <div>
                       <h4 className="font-semibold text-primary-900">{info.title}</h4>
                       {info.link ? (
                         <a 
                           href={info.link}
-                          className="text-secondary-50 hover:text-accent transition-colors duration-200"
+                          className="text-secondary-50 hover:text-blue-600 transition-colors duration-200"
                         >
                           {info.value}
                         </a>
@@ -131,7 +131,7 @@ const Contact = () => {
 
               {/* Social Links */}
               <div>
-                <h4 className="text-lg font-semibold text-accent mb-4">Follow Me</h4>
+                <h4 className="text-lg font-semibold text-blue-600 mb-4">Follow Me</h4>
                 <div className="flex gap-4">
                   {socialLinks.map((social, index) => (
                     <a
@@ -139,10 +139,11 @@ const Contact = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-3 bg-primary-700 text-white rounded-lg hover:bg-accent hover:text-white transition-all duration-300 transform hover:scale-110 border border-primary-600"
+                      className="p-3 bg-primary-700 text-white rounded-lg border border-blue-600 flex items-center gap-2"
                       title={social.name}
                     >
                       <social.icon size={24} />
+                      <span className="font-semibold text-sm">{social.name}</span>
                     </a>
                   ))}
                 </div>
@@ -221,7 +222,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-primary-700 text-accent py-4 px-6 rounded-lg font-semibold hover:bg-accent hover:text-white transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg border border-primary-600"
+                  className="w-full bg-primary-700 text-blue-600 py-4 px-6 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg border border-blue-600"
                 >
                   <Send size={20} />
                   Send Message
@@ -232,7 +233,7 @@ const Contact = () => {
 
           {/* Professional Quote */}
           <div className="text-center mt-16 p-8 bg-primary-900 rounded-xl border border-primary-700">
-            <h4 className="text-2xl font-bold text-accent mb-4">Giovanni Ayiah-Mensah</h4>
+            <h4 className="text-2xl font-bold text-blue-600 mb-4">Giovanni Ayiah-Mensah</h4>
             <p className="text-lg text-secondary-50 italic">
               "Professional backend developer dedicated to innovation, Python excellence, and transformative results."
             </p>
@@ -259,7 +260,7 @@ const Contact = () => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 text-accent hover:text-primary-700 transition-colors duration-200"
+                  className="p-2 text-blue-600 hover:text-primary-700 transition-colors duration-200"
                   title={social.name}
                 >
                   <social.icon size={20} />

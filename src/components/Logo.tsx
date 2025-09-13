@@ -1,4 +1,4 @@
-import logo from '../assets/logo.jpg'
+const logo = '/my_portfolio_website/logo.jpg'
 
 export default function Logo() {
   return (

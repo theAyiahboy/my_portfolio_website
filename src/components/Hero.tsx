@@ -10,7 +10,7 @@ const Hero = () => {
       {/* Animated Gradient Blobs */}
       <div className="absolute -top-32 -left-32 w-[40vw] h-[40vw] bg-primary-400 opacity-30 rounded-full blur-3xl animate-pulse-slow z-0" />
       <div className="absolute top-0 right-0 w-[30vw] h-[30vw] bg-secondary-400 opacity-20 rounded-full blur-2xl animate-pulse-slow z-0" />
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[60vw] h-[20vw] bg-accent opacity-10 rounded-full blur-2xl z-0" />
+  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[60vw] h-[20vw] bg-blue-600 opacity-10 rounded-full blur-2xl z-0" />
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -22,12 +22,12 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
           <div className="mb-8">
-            <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-tr from-primary-400 via-secondary-400 to-accent p-1 shadow-2xl relative">
-              <div className="w-full h-full rounded-full flex items-center justify-center text-5xl font-extrabold text-accent bg-glass-100 backdrop-blur-md border-4 border-accent/40 shadow-xl">
+            <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-tr from-primary-400 via-secondary-400 to-blue-600 p-1 shadow-2xl relative">
+              <div className="w-full h-full rounded-full flex items-center justify-center text-5xl font-extrabold text-blue-600 bg-glass-100 backdrop-blur-md border-4 border-blue-600/40 shadow-xl">
                 GA
               </div>
               {/* Glassmorphism Card */}
-              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-56 bg-glass-100 backdrop-blur-md rounded-2xl shadow-lg border border-accent/30 py-3 px-6 flex flex-col items-center gap-1">
+              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-56 bg-glass-100 backdrop-blur-md rounded-2xl shadow-lg border border-blue-600/30 py-3 px-6 flex flex-col items-center gap-1">
                 <span className="text-lg font-semibold text-primary-400">Backend Developer</span>
                 <span className="text-sm text-secondary-400">Python • APIs • Teamwork</span>
               </div>
@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
 
           {/* Name and Title */}
-          <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-accent to-secondary-400 mb-4 animate-fade-in-up drop-shadow-xl mt-16">
+          <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-blue-600 to-secondary-400 mb-4 animate-fade-in-up drop-shadow-xl mt-16">
             Giovanni Ayiah-Mensah
           </h1>
           <div className="text-xl md:text-2xl text-neutral-100 mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
@@ -43,7 +43,7 @@ const Hero = () => {
             <span className="mx-3">•</span>
             <span className="font-semibold text-secondary-400">Python Enthusiast</span>
             <span className="mx-3">•</span>
-            <span className="font-semibold text-accent">Team Player</span>
+            <span className="font-semibold text-blue-600">Team Player</span>
           </div>
           <p className="text-lg md:text-xl text-neutral-100 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             Passionate backend developer focused on Python, API design, and scalable server-side solutions. Experienced in Git, GitHub teamwork, and building secure, high-performance applications. Dedicated to backend excellence and collaborative development.

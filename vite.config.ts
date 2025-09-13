@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/',
+  base: '/my_portfolio_website/',
   plugins: [react()],
   server: {
     host: true, // Allow connections from all IPs

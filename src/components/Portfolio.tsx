@@ -7,7 +7,7 @@ const projects = [
     tags: ["Portfolio", "React", "TypeScript", "Tailwind CSS", "Git", "GitHub", "Prompt Engineering"],
     icon: FileText,
     metrics: "Live & maintained",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+  image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
     link: "https://github.com/Vannidotcom/portfolio2025"
   },
   {
@@ -16,7 +16,8 @@ const projects = [
     tags: ["Prompt Engineering", "AI", "Web Automation", "Freelance"],
     icon: Lightbulb,
     metrics: "Multiple client projects",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+  image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    link: "https://github.com/theAyiahboy?tab=repositories"
   },
   {
     title: "Builders Avenue Website",
@@ -24,7 +25,7 @@ const projects = [
     tags: ["Web Development", "AI", "Business", "Client Work"],
     icon: Users,
     metrics: "Launched for client",
-    image: "/builders-avenue-logo.JPG"
+  image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
   },
   {
     title: "Erin Braids Appointment System",
@@ -32,7 +33,7 @@ const projects = [
     tags: ["Web App", "Booking", "Client Work", "AI"],
     icon: FileText,
     metrics: "Used by Erin Braids",
-    image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=800&q=80"
+  image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=800&q=80"
   }
 ]
 
@@ -42,7 +43,7 @@ const Portfolio = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-accent mb-3 font-mono tracking-tight">Portfolio</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mb-3 font-mono tracking-tight">Portfolio</h2>
           <p className="text-lg text-primary-200 max-w-2xl mx-auto font-mono">
             Backend & Python projects: clean code, automation, and real-world impact.
           </p>
@@ -75,7 +76,7 @@ const Portfolio = () => {
 
                 {/* Metrics */}
                 <div className="mb-3">
-                  <span className="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-semibold shadow font-mono border border-accent/30">
+                  <span className="inline-block bg-blue-600/10 text-blue-600 px-3 py-1 rounded-full text-xs font-semibold shadow font-mono border border-blue-600/30">
                     {project.metrics}
                   </span>
                 </div>
@@ -85,7 +86,7 @@ const Portfolio = () => {
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className="bg-primary-950 text-accent px-2 py-1 rounded text-xs font-mono border border-accent/20"
+                      className="bg-primary-950 text-blue-600 px-2 py-1 rounded text-xs font-mono border border-blue-600/20"
                     >
                       {tag}
                     </span>
@@ -94,7 +95,7 @@ const Portfolio = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-3 mt-auto">
-                  <button aria-label={`View case study for ${project.title}`} className="flex-1 bg-accent text-white py-3 px-5 rounded-lg hover:bg-primary-100 hover:text-accent transition-colors duration-300 flex items-center justify-center gap-2 text-base font-bold border-2 border-accent font-mono shadow-lg">
+                  <button aria-label={`View case study for ${project.title}`} className="flex-1 bg-blue-600 text-white py-3 px-5 rounded-lg hover:bg-primary-100 hover:text-blue-600 transition-colors duration-300 flex items-center justify-center gap-2 text-base font-bold border-2 border-blue-600 font-mono shadow-lg">
                     <FileText size={18} />
                     <span>View Case Study</span>
                   </button>
@@ -104,14 +105,14 @@ const Portfolio = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Learn more about ${project.title}`}
-                      className="flex-1 border-2 border-accent text-accent py-3 px-5 rounded-lg hover:bg-accent hover:text-white transition-all duration-300 flex items-center justify-center gap-2 text-base font-bold font-mono shadow-lg bg-primary-100/10"
+                      className="flex-1 border-2 border-blue-600 text-blue-600 py-3 px-5 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 text-base font-bold font-mono shadow-lg bg-primary-100/10"
                     >
                       <ExternalLink size={18} />
                       <span>Learn More</span>
                     </a>
                   ) : (
                     <button
-                      className="flex-1 border-2 border-accent text-accent py-3 px-5 rounded-lg bg-primary-900/40 hover:bg-accent/20 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 text-base font-bold font-mono shadow-lg"
+                      className="flex-1 border-2 border-blue-600 text-blue-600 py-3 px-5 rounded-lg bg-primary-900/40 hover:bg-blue-600/20 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 text-base font-bold font-mono shadow-lg"
                       aria-label="Learn More (disabled)"
                       disabled
                     >
@@ -133,7 +134,7 @@ const Portfolio = () => {
           <a
             href="#contact"
             aria-label="Get in touch via contact form"
-            className="inline-block bg-accent text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary-100 hover:text-accent transition-all duration-300 transform hover:-translate-y-1 shadow-xl font-mono border-2 border-accent"
+            className="inline-block bg-blue-600 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary-100 hover:text-blue-600 transition-all duration-300 transform hover:-translate-y-1 shadow-xl font-mono border-2 border-blue-600"
           >
             <span>Get in Touch</span>
           </a>
