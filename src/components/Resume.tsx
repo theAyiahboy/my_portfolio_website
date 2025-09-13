@@ -98,23 +98,51 @@ export default function Resume() {
           <div className="mb-16">
             <h3 className="text-2xl font-semibold text-accent mb-6 font-mono">Experience</h3>
             {experience.map((item: any, idx: number) => (
-              <div key={idx} className="mb-10 bg-primary-950 rounded-xl p-7 shadow-lg border border-primary-800 font-mono">
-                <h4 className="text-lg font-bold text-accent mb-1 flex items-center gap-2">
-                  {item.role}
-                  {item.company === 'Fruits Haven' && (
-                    <img src="/fruits-haven-logo.JPG" alt="Fruits Haven Logo" className="inline-block w-8 h-8 rounded-full border border-accent ml-2" />
-                  )}
-                </h4>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                  <span className="text-primary-100 font-medium">{item.company}</span>
-                  <span className="text-primary-300 text-xs">{item.period}</span>
+              item.role === 'Freelance AI Developer' ? (
+                <a
+                  key={idx}
+                  href="https://github.com/theAyiahboy?tab=repositories"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block mb-10 bg-primary-950 rounded-xl p-7 shadow-lg border border-primary-800 font-mono group transition-all duration-200 hover:bg-accent/10 hover:border-accent transform hover:scale-105 hover:shadow-2xl"
+                  aria-label="View freelance projects on GitHub"
+                >
+                  <h4 className="text-lg font-bold text-accent mb-1 flex items-center gap-2 group-hover:text-accent">
+                    {item.role}
+                  </h4>
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                    <span className="text-primary-100 font-medium group-hover:text-accent">{item.company}</span>
+                    <span className="text-primary-300 text-xs group-hover:text-accent">{item.period}</span>
+                  </div>
+                  <ul className="list-disc list-inside text-primary-200 text-xs pl-4">
+                    {item.details.map((detail: string, i: number) => (
+                      <li key={i} className="group-hover:text-primary-100">{detail}</li>
+                    ))}
+                  </ul>
+                  <span
+                    className="block mt-2 h-0.5 w-0 bg-accent group-hover:w-full transition-all duration-300 rounded"
+                    aria-hidden="true"
+                  />
+                </a>
+              ) : (
+                <div key={idx} className="mb-10 bg-primary-950 rounded-xl p-7 shadow-lg border border-primary-800 font-mono">
+                  <h4 className="text-lg font-bold text-accent mb-1 flex items-center gap-2">
+                    {item.role}
+                    {item.company === 'Fruits Haven' && (
+                      <img src="/fruits-haven-logo.JPG" alt="Fruits Haven Logo" className="inline-block w-8 h-8 rounded-full border border-accent ml-2" />
+                    )}
+                  </h4>
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                    <span className="text-primary-100 font-medium">{item.company}</span>
+                    <span className="text-primary-300 text-xs">{item.period}</span>
+                  </div>
+                  <ul className="list-disc list-inside text-primary-200 text-xs pl-4">
+                    {item.details.map((detail: string, i: number) => (
+                      <li key={i}>{detail}</li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="list-disc list-inside text-primary-200 text-xs pl-4">
-                  {item.details.map((detail: string, i: number) => (
-                    <li key={i}>{detail}</li>
-                  ))}
-                </ul>
-              </div>
+              )
             ))}
           </div>
 
