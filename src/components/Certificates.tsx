@@ -5,8 +5,8 @@ const certificates = [
     title: 'ALX Professional Foundations Certificate',
     issuer: 'ALX Africa',
     date: 'Aug 2025',
-  image: '/my_portfolio_website/certificate.png',
-  file: '/my_portfolio_website/certificate.png',
+  image: '/certificate.png',
+  file: '/certificate.png',
     description: 'Awarded for completing the ALX Professional Foundations Program.'
   }
 ];

@@ -15,7 +15,7 @@ export default function About() {
             <span className="ml-4 text-xs text-primary-300 font-mono tracking-widest">about.py</span>
           </div>
           <img
-            src="/my_portfolio_website/profile.jpg"
+            src="/profile.jpg"
             alt="Giovanni Ayiah-Mensah"
             className="w-36 h-36 rounded-full object-cover border-4 border-blue-600 shadow-lg mt-12 mb-6"
           />
