@@ -1,7 +1,10 @@
 
+import SocialBar from './SocialBar'
+
 export default function About() {
   return (
-    <section id="about" className="py-28 bg-gradient-to-b from-primary-900 via-primary-800 to-primary-900 text-primary-100">
+    <section id="about" className="py-28 bg-gradient-to-b from-primary-900 via-primary-800 to-primary-900 text-primary-100 relative">
+      <SocialBar />
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
         {/* Profile Card with Terminal/Code UI */}
         <div className="flex flex-col items-center md:items-start bg-primary-800 rounded-2xl shadow-2xl p-10 border-2 border-accent relative overflow-hidden">

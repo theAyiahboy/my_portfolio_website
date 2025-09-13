@@ -24,7 +24,7 @@ const projects = [
     tags: ["Web Development", "AI", "Business", "Client Work"],
     icon: Users,
     metrics: "Launched for client",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+    image: "/builders-avenue-logo.JPG"
   },
   {
     title: "Erin Braids Appointment System",
@@ -62,13 +62,6 @@ const Portfolio = () => {
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-primary-950/40 group-hover:bg-primary-950/60 transition-all duration-300" />
-                <div className="absolute top-4 right-4 p-2 bg-primary-950/80 rounded-lg border border-accent">
-                  <project.icon className="text-accent" size={20} />
-                </div>
-                <div className="absolute bottom-2 left-4 text-xs text-primary-300 font-mono bg-primary-900/80 px-2 py-1 rounded shadow border border-primary-800">
-                  {project.tags.slice(0,2).join(' | ')}
-                </div>
               </div>
 
               {/* Project Content */}

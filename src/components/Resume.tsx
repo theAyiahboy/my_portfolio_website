@@ -26,7 +26,7 @@ export default function Resume() {
       {
         role: 'Web Developer',
         company: 'Builders Avenue',
-        period: '2024',
+        period: '2025',
         details: [
           'Developed a business website for a building materials company.',
           'Used AI tools to streamline content and design.',
@@ -36,7 +36,7 @@ export default function Resume() {
       {
         role: 'Web App Developer',
         company: 'Erin Braids',
-        period: '2024',
+        period: '2025',
         details: [
           'Created a web-based appointment booking system for a hair stylist.',
           'Enabled customers to book appointments online.',
@@ -44,7 +44,7 @@ export default function Resume() {
         ]
       },
       {
-        role: 'Portfolio Creator',
+        role: 'Full-Stack Portfolio Engineer',
         company: 'Personal Project',
         period: '2025',
         details: [
@@ -99,7 +99,12 @@ export default function Resume() {
             <h3 className="text-2xl font-semibold text-accent mb-6 font-mono">Experience</h3>
             {experience.map((item: any, idx: number) => (
               <div key={idx} className="mb-10 bg-primary-950 rounded-xl p-7 shadow-lg border border-primary-800 font-mono">
-                <h4 className="text-lg font-bold text-accent mb-1">{item.role}</h4>
+                <h4 className="text-lg font-bold text-accent mb-1 flex items-center gap-2">
+                  {item.role}
+                  {item.company === 'Fruits Haven' && (
+                    <img src="/fruits-haven-logo.JPG" alt="Fruits Haven Logo" className="inline-block w-8 h-8 rounded-full border border-accent ml-2" />
+                  )}
+                </h4>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                   <span className="text-primary-100 font-medium">{item.company}</span>
                   <span className="text-primary-300 text-xs">{item.period}</span>
